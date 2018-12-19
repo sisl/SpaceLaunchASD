@@ -13,7 +13,6 @@ addprocs(N_PROCS-1)
 push!(LOAD_PATH, "../src")
 
 @everywhere include("CSLVProblem_.jl")
-@everywhere include("MDPSolver_.jl")
 @everywhere include("ParallelVI_.jl")
 @everywhere using GridInterpolations
 debris = load("../assets/debris.jld", "debris")
@@ -21,7 +20,6 @@ debris = load("../assets/debris.jld", "debris")
 cores = 2
 
 @everywhere struct necData
-    profile::Int64
     timeEnd::Int64
     numCuts::Int64
     headingCutPoints::Array{Float64,1}
@@ -31,14 +29,13 @@ cores = 2
 end
 
 function necData()
-    profile = 1
     numCuts = 200 
     timeEnd = 81 + 1
     headingCutPoints = collect(-180.0:15.0:180.0)
     hcpLength = length(headingCutPoints)
     anomCutPoints = collect(-1.0:11.0)
     acpLength = length(anomCutPoints)
-    necData(profile, timeEnd, numCuts, headingCutPoints, hcpLength, anomCutPoints, acpLength)
+    necData(timeEnd, numCuts, headingCutPoints, hcpLength, anomCutPoints, acpLength)
 end
 
 solveData = necData()

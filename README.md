@@ -3,15 +3,19 @@
 This repository contains supplementary code written at Stanford and discussed in the paper titled “Optimal Aircraft Rerouting during Space Launches using Adaptive Spatial Discretization” by Rachael E. Tompa and Mykel J. Kochenderfer, in the 2018 Digital Avionics Systems Conference. 
 
 Here you will find the code to perform the following:
+
 Implement and solve the individual MDP solutions using parallelized value iteration and combining them to a single solution
   * src/cslvmdpSingle.jl
   * src/MDPSolver.jl
   * src/RunMDP.jl
+  
 Asset Files
   * assets/debris.jld
   * assets/flightPaths.jl
+  
 Visualize the MDP solution
   * notebooks/visualizeUtilityAndPolicy.ipynb
+  
 Run simulations of the airspace to analyze historic, nominal, and proposed aircraft flights
   * notebooks/runSimulations.ipynb
   * src/Simulations.jl

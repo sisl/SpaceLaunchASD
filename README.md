@@ -5,8 +5,9 @@ This repository contains supplementary code written at Stanford and discussed in
 Here you will find the code to perform the following:
 
 Implement and solve the individual MDP solutions using parallelized value iteration and combining them to a single solution
-  * src/cslvmdpSingle.jl
-  * src/MDPSolver.jl
+  * src/CSLVProblem.jl
+  * src/CSLV_.jl
+  * src/ParallelVI_.jl
   * src/RunMDP.jl
   
 Asset Files

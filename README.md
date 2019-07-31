@@ -29,5 +29,5 @@ The software is implemented entirely in Julia. For the best results, the user sh
 * [Color.jl](https://github.com/JuliaGraphics/Colors.jl)
 * [JLD.jl](https://github.com/JuliaIO/JLD.jl) [Note: additional dependencies]
 * [NearestNeighbors.jl](https://github.com/KristofferC/NearestNeighbors.jl) [Note: additional dependencies]
-*	[PGFPlots.jl](https://github.com/sisl/PGFPlots.jl) (Note: additional dependencies)
+*	[PGFPlots.jl](https://github.com/sisl/PGFPlots.jl) [Note: additional dependencies]
 *	[ProgressMeter.jl](https://github.com/timholy/ProgressMeter.jl)
